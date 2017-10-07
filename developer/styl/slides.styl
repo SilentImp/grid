@@ -1,0 +1,570 @@
+.illustration
+    &--grid-scheme
+        background-image url(../images/grid-scheme.png)
+    &--title
+        background-image url(../images/title.jpg)
+    &--brief
+        background-image url(../images/book.jpg)
+    
+    &--full
+        background-image url(../images/book-2.jpg)
+        
+    &--rachelandrew
+        background-image url(../images/rachelandrew.jpg)
+        background-position 160px 0
+        background-color #000
+    &--yt
+        background-image url(../images/yt.png)
+        background-position 100% 100%
+    &--bug
+        background-image url(../images/bug.jpg)
+    &--garden
+        background-image url(../images/garden.png)
+        background-position 100% 0
+
+.screen
+    &--live
+        background-image url(../images/live.png)
+    &--draft
+        background-image url(../images/draft.png)
+    &--ex
+        background-image url(../images/ex.png)
+    &--quick
+        background-image url(../images/quick.png)
+    &--cguide
+        background-image url(../images/cguide.png)
+    &--support
+        background-image url(../images/support.png)
+    &--grid
+        background-image url(../images/grid.png)
+    &--support-next
+        background-image url(../images/support-next.png)
+    &--support-future
+        background-image url(../images/future.png)
+    &--support-ie
+        background-image url(../images/ie.png)
+    &--pinterest
+        background-image url('../images/pinterest.png')
+    &--grid-1
+        background-image url('../images/grid-1.png')
+    &--grid-2
+        background-image url('../images/grid-2.png')
+    &--grid-3
+        background-image url('../images/grid-3.png')
+    &--grid-4
+        background-image url('../images/grid-4.png')
+    &--grid-5
+        background-image url('../images/grid-5.png')
+
+.overlay
+    &__abstract
+        box-sizing border-box
+        padding 20px
+        position absolute
+        top 20px
+        left 20px
+        bottom 20px
+        width 33%
+        background-color rgba(255,255,255,.7)
+        &--right
+            left auto
+            right 20px
+    &__title
+        font-size 64px
+        line-height 72px
+        h2&
+            font-size 56px
+            line-height 64px
+        h3&
+            font-size 42px
+            line-height 48px
+        h4&
+            font-size 36px
+            line-height 42px
+            
+    &__qr
+        margin 20px 0
+        width 100%
+    &__link
+        font-size 18px
+        line-height 28px
+
+article.cloud.cloud--ie-next
+    h1
+        width 400px
+        height 400px
+        right 0
+        left 0
+        bottom 0
+        top 0
+        line-height 400px
+        text-align center
+        box-sizing border-box
+        background-color rgba(240,240,255,.5)
+        .wrapper
+            font-size 56px
+            line-height 64px
+            white-space nowrap
+        &:after
+            transform rotate(65deg)
+            transform-origin 10px -198px
+            
+article.cloud.cloud--title
+    h1
+        width 500px
+        height 500px
+        right 0
+        left 0
+        bottom 0
+        top 0
+        line-height 500px
+        text-align center
+        box-sizing border-box
+        background-color rgba(255,255,255,.95)
+        .wrapper
+            font-size 48px
+            line-height 56px
+            white-space nowrap
+        &:after
+            display none
+            transform rotate(65deg)
+            transform-origin 10px -198px
+
+
+article.center.qrcode.var
+  h2
+    font-size 64px
+
+article.center.qrcode.var-2
+  h2
+    font-size 72px
+
+article.center.qrcode.var-3
+  h2
+    font-size 72px
+  a
+    font-size 32px
+
+article.center.qrcode.var-4
+  h2
+    font-size 72px
+  a
+    font-size 24px
+
+article.center.qrcode.var-5
+  h2
+    font-size 60px
+  a
+    font-size 42px
+    
+    
+    
+article.example.example-grid-layout
+    .page
+        display: grid;
+        grid-gap: 0 20px;
+
+        grid-template-columns: 250px auto 350px;
+        grid-template-rows: 100px auto 100px;
+
+        line-height 100px
+        font-size 24px
+        min-height 100%
+
+
+    .header
+        grid-row 1
+        grid-column 1/4
+
+        text-align center
+        color #fff
+        background red
+    .footer
+        grid-row 3
+        grid-column 1/4
+
+        text-align center
+        color #fff
+        background red
+    .aside
+        grid-row 2
+        grid-column 3
+
+        width 350px
+        background green
+        text-align center
+        color #fff
+
+    .nav
+        grid-row 2
+        grid-column 1
+
+        width 250px
+        background blue
+        text-align center
+        color #fff
+
+    .main
+        grid-row 2
+        grid-column 2
+
+        background orange
+        line-height 36px
+
+article.example.example-grid-layout-area
+
+    .header
+        grid-area: header;
+
+        text-align center
+        color #fff
+        background red
+
+    .footer
+        grid-area: footer;
+
+        text-align center
+        color #fff
+        background red
+
+    .aside
+        grid-area: aside;
+
+        width 350px
+        background green
+        text-align center
+        color #fff
+
+    .nav
+        grid-area: nav;
+
+        width 250px
+        background blue
+        text-align center
+        color #fff
+
+    .main
+        grid-area: main;
+
+        background orange
+        line-height 36px
+
+
+article.example.example-grid-layout-area-x
+
+    .header
+        grid-area: header;
+
+        text-align center
+        color #fff
+        background red
+
+    .footer
+        grid-area: footer;
+
+        text-align center
+        color #fff
+        background red
+
+    .aside
+        grid-area: aside;
+
+        width 350px
+        background green
+        text-align center
+        color #fff
+
+    .nav
+        grid-area: nav;
+
+        width 250px
+        background blue
+        text-align center
+        color #fff
+
+    .main
+        grid-area: main;
+
+        background orange
+        line-height 36px
+
+article.example
+    position relative
+    .item
+        width 100%
+        height 100%
+        background-color rgba(240, 240, 255, .75)
+        border: 1px solid rgba(140, 140, 155, 1)
+    &--base-1
+        .container
+            display grid
+            height 100%
+    &--base-2
+        .container
+            display grid
+            height 100%
+            grid-template-columns: 1fr 2fr 1fr 1fr;
+            grid-template-rows: 100px 1fr 1fr 100px;
+    &--base-3
+        .container
+            display grid
+            height 100%
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 100px auto 100px 100px;
+    &--base-4
+        .container
+            position relative
+            display grid
+            height 100%
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            .item--first
+                background-color #e50000
+                font-size 64px
+                line-height 25vh
+                text-align center
+                color #fff
+                text-transform uppercase
+                border 0
+            .item--second
+                background-color #00e500
+                font-size 64px
+                line-height 25vh
+                text-align center
+                color #fff
+                text-transform uppercase
+                border 0
+    &--base-5
+        .container
+            position relative
+            display grid
+            height 100%
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            .item--first
+                background-color #e50000
+                font-size 64px
+                line-height 25vh
+                text-align center
+                color #fff
+                text-transform uppercase
+                border 0
+                order -1
+            .item--second
+                background-color #00e500
+                font-size 64px
+                line-height 25vh
+                text-align center
+                color #fff
+                text-transform uppercase
+                border 0
+    &--base-6
+        .container
+            position relative
+            display grid
+            height 100%
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            background:
+                linear-gradient(0deg, rgba(255, 240, 240, .75) 50%, transparent 50%),
+                linear-gradient(90deg, rgba(255, 240, 255, .75) 50%, transparent 50%);
+            background-size 50% 50%, 50% 50% 
+            background-repeat repeat, repeat
+            .item 
+                &--alpha
+                    background-color #f0fff0
+                    font-size 120px
+                    text-align center
+                    color #000
+                    border 0
+                &--omega
+                    background-color #666
+                    font-size 120px
+                    text-align center
+                    color #fff
+                    border 0
+    &--base-7
+        .container
+            position relative
+            display grid
+            height 100%
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            background:
+                linear-gradient(0deg, rgba(255, 240, 240, .75) 50%, transparent 50%),
+                linear-gradient(90deg, rgba(255, 240, 255, .75) 50%, transparent 50%);
+            background-size 50% 50%, 50% 50% 
+            background-repeat repeat, repeat
+            .item 
+                border 0
+                &--alpha
+                    background-color #f0fff0
+                    font-size 120px
+                    text-align center
+                    color #000
+                    grid-column-start: 3;
+                &--omega
+                    background-color #666
+                    font-size 120px
+                    text-align center
+                    color #fff
+                    grid-row-start: 3;
+    &--base-8
+        .container
+            position relative
+            display grid
+            height 100%
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            background:
+                linear-gradient(0deg, rgba(255, 240, 240, .75) 50%, transparent 50%),
+                linear-gradient(90deg, rgba(255, 240, 255, .75) 50%, transparent 50%);
+            background-size 50% 50%, 50% 50% 
+            background-repeat repeat, repeat
+            .item 
+                border 0
+                &--alpha
+                    background-color #f0fff0
+                    font-size 120px
+                    text-align center
+                    color #000
+                    grid-column-start: 3;
+                    grid-column-end: 5;
+                &--omega
+                    background-color #666
+                    font-size 120px
+                    line-height 310px
+                    text-align center
+                    color #fff
+                    grid-row-start: 3;
+                    grid-row-end: 5;
+    &--base-9
+        .container
+            position relative
+            display grid
+            height 100%
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            background:
+                linear-gradient(0deg, rgba(255, 240, 240, .75) 50%, transparent 50%),
+                linear-gradient(90deg, rgba(255, 240, 255, .75) 50%, transparent 50%);
+            background-size 50% 50%, 50% 50% 
+            background-repeat repeat, repeat
+            .item 
+                border 0
+                &--alpha
+                    background-color #f0fff0
+                    font-size 120px
+                    text-align center
+                    color #000
+                    grid-column: 3 / 5;
+                &--omega
+                    background-color #666
+                    font-size 120px
+                    line-height 310px
+                    text-align center
+                    color #fff
+                    grid-row: 3 / 5;
+    &--base-10
+        .container
+            position relative
+            display grid
+            height 100%
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            background:
+                linear-gradient(0deg, rgba(255, 240, 240, .75) 50%, transparent 50%),
+                linear-gradient(90deg, rgba(255, 240, 255, .75) 50%, transparent 50%);
+            background-size 50% 50%, 50% 50% 
+            background-repeat repeat, repeat
+            .item 
+                border 0
+                &--alpha
+                    background-color #f0fff0
+                    font-size 120px
+                    line-height 310px
+                    text-align center
+                    color #000
+                    grid-column: 3 / span 2;
+                    grid-row:  1 / span 2;
+                &--omega
+                    background-color #666
+                    font-size 120px
+                    line-height 310px
+                    text-align center
+                    color #fff
+                    grid-row: 3 / span 2;
+                    grid-column: 1 / span 2;
+    &--base-11
+        .container
+            position relative
+            display grid
+            height 100%
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            background:
+                linear-gradient(0deg, rgba(255, 240, 240, .75) 50%, transparent 50%),
+                linear-gradient(90deg, rgba(255, 240, 255, .75) 50%, transparent 50%);
+            background-size 50% 50%, 50% 50% 
+            background-repeat repeat, repeat
+            .item 
+                border 0
+                &--alpha
+                    background-color #f0fff0
+                    font-size 120px
+                    line-height 310px
+                    text-align center
+                    color #000
+                    grid-area: 2 / 2 / span 2 / span 3;
+    &--base-12
+        .container
+            position relative
+            display grid
+            height 100%
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas: "omega omega alpha ." "omega omega alpha ." ". . alpha ." ". . alpha .";
+            background:
+                linear-gradient(0deg, rgba(255, 240, 240, .75) 50%, transparent 50%),
+                linear-gradient(90deg, rgba(255, 240, 255, .75) 50%, transparent 50%);
+            background-size 50% 50%, 50% 50% 
+            background-repeat repeat, repeat
+            .item 
+                border 0
+                &--alpha
+                    background-color #f0fff0
+                    font-size 120px
+                    line-height 650px
+                    text-align center
+                    color #000
+                    grid-area: alpha;
+                &--omega
+                    background-color #666
+                    font-size 120px
+                    line-height 310px
+                    text-align center
+                    color #fff
+                    grid-area: omega;
+
+    &--base-13
+        .container
+            position relative
+            display grid
+            height 100%
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-gap 20px
+
+    &--base-14
+        .container
+            display grid
+            height 100%
+            grid-template: 1fr 50px 1fr 1fr / 100px 3fr 1fr 100px;
+    
+    &--base-15
+        .container
+            grid-template-columns: repeat(auto-fill, minmax(25ch, 1fr));
+            grid-gap 20px
+        .item
+            width: 300px;
+            height: 320px;
