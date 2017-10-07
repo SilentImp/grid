@@ -1,0 +1,208 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><title>CSS Grid Layout </title><link href="css/styles.css" rel="stylesheet"><script data-main="js/presentation" src="js/requirejs/require.js"></script></head><body><form class="go-to-page" action="/select/slide" method="post"><fieldset><input type="text" maxlength="3" value="" placeholder="1"></fieldset></form><section class="progress"><div class="value"></div></section><section class="dark" id="slides"><article class="illustration illustration--title cloud cloud--title"><h1><p class="wrapper">CSS Grid Layout </p></h1></article><article class="screen screen--grid overlay"><div class="overlay__abstract overlay__abstract--right"><h3 class="overlay__title">CSS Grid Layout Module Level 1</h3><img class="overlay__qr" src="images/grid.svg" alt="QRCODE cо ссылкой"><p><a class="overlay__link" href="https://drafts.csswg.org/css-grid/" data-click>https://drafts.csswg.org/css-grid/</a></p></div></article><article class="screen screen--draft overlay"><div class="overlay__abstract overlay__abstract--right"><h3 class="overlay__title">CSS Grid Layout Module Level 2</h3><img class="overlay__qr" src="images/draft.svg" alt="QRCODE cо ссылкой"><p><a class="overlay__link" href="https://drafts.csswg.org/css-grid-2/" data-click>https://drafts.csswg.org/css-grid-2/</a></p></div></article><article class="book book--full illustration illustration--garden overlay"><div class="overlay__abstract overlay__abstract--right"><h1 class="overlay__title">Grid Garden</h1><img class="overlay__qr" src="images/garden.svg" alt="QRCODE cо ссылкой"><p><a class="overlay__link" href="http://cssgridgarden.com/" data-click>http://cssgridgarden.com/</a></p></div></article><article class="screen screen--cguide overlay"><div class="overlay__abstract overlay__abstract--right"><h3 class="overlay__title">A Complete Guide to Grid</h3><img class="overlay__qr" src="images/cguide.svg" alt="QRCODE cо ссылкой"><p><a class="overlay__link" href="https://css-tricks.com/snippets/css/complete-guide-grid/" data-click>https://css-tricks.com/snippets/css/complete-guide-grid/</a></p></div></article><article class="screen screen--quick overlay"><div class="overlay__abstract overlay__abstract--right"><h4 class="overlay__title">Here's a Super Quick Way to Try out CSS Grid</h4><img class="overlay__qr" src="images/quick.svg" alt="QRCODE cо ссылкой"><p><a class="overlay__link" href="http://jensimmons.com/post/aug-15-2017/heres-super-quick-way-try-out-css-grid" data-click>http://jensimmons.com/post/aug-15-2017/heres-super-quick-way-try-out-css-grid</a></p></div></article><article class="book book--full illustration illustration--yt overlay"><div class="overlay__abstract"><h4 class="overlay__title">Start Using CSS Grid Layouts Today</h4><img class="overlay__qr" src="images/yt.svg" alt="QRCODE cо ссылкой"><p><a class="overlay__link" href="https://www.youtube.com/watch?v=tjHOLtouElA" data-click>https://www.youtube.com/watch?v=tjHOLtouElA</a></p></div></article><article class="screen screen--ex overlay"><div class="overlay__abstract overlay__abstract--right"><h4 class="overlay__title">Grid by Example</h4><img class="overlay__qr" src="images/ex.svg" alt="QRCODE cо ссылкой"><p><a class="overlay__link" href="https://gridbyexample.com/" data-click>https://gridbyexample.com/</a></p></div></article><article class="book book--brief illustration illustration--brief overlay"><div class="overlay__abstract overlay__abstract--right"><h3 class="overlay__title">GET READY FOR CSS GRID LAYOUT</h3><img class="overlay__qr" src="images/getready.svg" alt="QRCODE cо ссылкой"><p><a class="overlay__link" href="https://abookapart.com/products/get-ready-for-css-grid-layout" data-click>https://abookapart.com/products/get-ready-for-css-grid-layout</a></p></div></article><article class="book book--full illustration illustration--full overlay"><div class="overlay__abstract overlay__abstract--right"><h2 class="overlay__title">THE NEW CSS LAYOUT</h2><img class="overlay__qr" src="images/newlayout.svg" alt="QRCODE cо ссылкой"><p><a class="overlay__link" href="https://abookapart.com/products/the-new-css-layout" data-click>https://abookapart.com/products/the-new-css-layout</a></p></div></article><article class="book book--full illustration illustration--rachelandrew overlay"><div class="overlay__abstract"><h1 class="overlay__title">Rachel Andrew</h1><img class="overlay__qr" src="images/rachelandrew.svg" alt="QRCODE cо ссылкой"><p><a class="overlay__link" href="https://rachelandrew.co.uk/" data-click>https://rachelandrew.co.uk/</a></p></div></article><article class="screen screen--live overlay"><div class="overlay__abstract overlay__abstract--right"><h1 class="overlay__title">CSS-LIVE</h1><img class="overlay__qr" src="images/live.svg" alt="QRCODE cо ссылкой"><p><a class="overlay__link" href="http://css-live.ru/tag/css3-grid-layout" data-click>http://css-live.ru/tag/css3-grid-layout</a></p></div></article><article class="screen screen--support"></article><article class="screen screen--support-ie"></article><article class="screen screen--support-next center cloud cloud--ie-next"><h1> <p class="wrapper">17 октября</p></h1></article><article class="illustration illustration--grid-scheme"></article><article class="center code-10"><div class="wrapper"><pre><code class="css">.container {
+    display: grid;
+}
+</code></pre></div></article><article class="center code-1"><div class="wrapper"><pre><code class="html">&lt;div class="container">
+    &lt;div class="item">&lt;!-- … -->&lt;/div>
+    &lt;div class="item">&lt;!-- … -->&lt;/div>
+    &lt;div class="item">&lt;!-- … -->&lt;/div>
+    &lt;!-- … -->
+    &lt;div class="item">&lt;!-- … -->&lt;/div>
+    &lt;div class="item">&lt;!-- … -->&lt;/div>
+&lt;/div>
+</code></pre></div></article><article class="example example--base-1"><div class="container"><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div></div></article><article class="center code-6"><div class="wrapper"><pre><code class="css">.container {
+    display: grid;
+    grid-template-columns: 
+        1fr 2fr 1fr 1fr;
+    grid-template-rows: 
+        100px 1fr 1fr 100px;
+}
+</code></pre></div></article><article class="example example--base-2"><div class="container"><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div></div></article><article class="center code-6"><div class="wrapper"><pre><code class="css">.container {
+    display: grid;
+    grid-template-columns: 
+        repeat(4, 1fr);
+    grid-template-rows: 
+        100px auto 100px 100px;
+}
+</code></pre></div></article><article class="example example--base-3"><div class="container"><div class="item"></div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div></div></article><article class="center code-6"><div class="wrapper"><pre><code class="css">.container {
+    grid-template: 
+        1fr 50px 1fr 1fr / 
+        100px 3fr 1fr 100px;
+}
+</code></pre></div></article><article class="example example--base-14"><div class="container"><div class="item"></div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div></div></article><article class="center code-10"><div class="wrapper"><pre><code class="css">.container {
+    grid-gap: 20px;
+}
+</code></pre></div></article><article class="example example--base-13"><div class="container"><div class="item"></div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div></div></article><article class="center code-1"><div class="wrapper"><pre><code class="html">&lt;div class="container">
+    &lt;div class="item">&lt;!-- … -->&lt;/div>
+    &lt;div class="item">Второй&lt;/div>
+    &lt;div class="item item--first">Первый&lt;/div>
+    &lt;!-- … -->
+    &lt;div class="item">&lt;!-- … -->&lt;/div>
+    &lt;div class="item">&lt;!-- … -->&lt;/div>
+&lt;/div>
+</code></pre></div></article><article class="example example--base-4"><div class="container"><div class="item item--second">Второй</div><div class="item item--first">Первый</div><div class="item"></div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div></div></article><article class="center code-10"><div class="wrapper"><pre><code class="css">.item--second {
+    order: -1;
+}
+</code></pre></div></article><article class="example example--base-5"><div class="container"><div class="item item--second">Второй</div><div class="item item--first">Первый</div><div class="item"></div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div><div class="item"> </div></div></article><article class="center code-1"><div class="wrapper"><pre><code class="html">&lt;div class="container">
+    &lt;div class="item item--alpha">&alpha;&lt;/div>
+    &lt;div class="item item--omega">&omega;&lt;/div>
+&lt;/div>
+</code></pre></div></article><article class="example example--base-6"><div class="container"><div class="item item--alpha">&alpha;</div><div class="item item--omega">&omega;</div></div></article><article class="center code-7"><div class="wrapper"><pre><code class="css">.item--alpha {
+    grid-column-start: 3;
+}
+.item--omega {
+    grid-row-start: 3;
+}
+</code></pre></div></article><article class="example example--base-7"><div class="container"><div class="item item--alpha">&alpha;</div><div class="item item--omega">&omega;</div></div></article><article class="center code-0"><div class="wrapper"><pre><code class="css">.item--alpha {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.item--omega {
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+</code></pre></div></article><article class="example example--base-8"><div class="container"><div class="item item--alpha">&alpha;</div><div class="item item--omega">&omega;</div></div></article><article class="center code-0"><div class="wrapper"><pre><code class="css">.item--alpha {
+    grid-column: 3 / 5;
+}
+.item--omega {
+    grid-row: 3 / 5;
+}
+</code></pre></div></article><article class="example example--base-9"><div class="container"><div class="item item--alpha">&alpha;</div><div class="item item--omega">&omega;</div></div></article><article class="center code-0"><div class="wrapper"><pre><code class="css">.item--alpha {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 2;
+}
+.item--omega {
+    grid-row: 3 / span 2;
+    grid-column: 1 / span 2;
+}
+</code></pre></div></article><article class="example example--base-10"><div class="container"><div class="item item--alpha">&alpha;</div><div class="item item--omega">&omega;</div></div></article><article class="center code-0"><div class="wrapper"><pre><code class="css">.item--alpha {
+    grid-area: 2 / 2 / span 2 / span 3;
+}
+</code></pre></div></article><article class="example example--base-11"><div class="container"><div class="item item--alpha">&alpha;</div></div></article><article class="center code-0"><div class="wrapper"><pre><code class="css">.item--alpha {
+    grid-area: alpha;
+}
+.item--omega {
+    grid-area: omega;
+}
+</code></pre></div></article><article class="center code-0"><div class="wrapper"><pre><code class="css">.container {
+    grid-template-areas: 
+        "omega omega alpha ."
+        "omega omega alpha ."
+        ". . alpha ."
+        ". . alpha .";
+}
+</code></pre></div></article><article class="example example--base-12"><div class="container"><div class="item item--alpha">&alpha;</div><div class="item item--omega">&omega;</div></div></article><article class="example example-grid-layout"><div class="page"><main class="main">Капитан схватил утконоса и радостноподбросил его в небо. Зверек расправил крылья и взлетел</main><nav class="nav">Навигация</nav><aside class="aside">Реклама</aside><header class="header">Шапка</header><footer class="footer">Подвал</footer></div></article><article class="center code-1"><div class="wrapper"><pre><code class="html">&lt;div class="page">
+    &lt;main class="main">Контент&lt;/main>
+    &lt;nav class="nav">Навигация&lt;/nav>
+    &lt;aside class="aside">Реклама&lt;/aside>
+    &lt;header class="header">Шапка&lt;/header>
+    &lt;footer class="footer">Подвал&lt;/footer>
+&lt;/div>
+</code></pre></div></article><article class="center code-1"><div class="wrapper"><pre><code class="css">.page {
+    display: grid;
+    grid-gap: 0 20px;
+    grid-template-columns: 250px auto 350px;
+    grid-template-rows: 100px auto 100px;
+}
+
+</code></pre></div></article><article class="center code-1"><div class="wrapper"><pre><code class="css">.header {
+    grid-row: 1;
+    grid-column: 1/4;
+}
+.footer {
+    grid-row: 3;
+    grid-column: 1/4;
+}
+</code></pre></div></article><article class="center code-3"><div class="wrapper"><pre><code class="css">.nav {
+    grid-row: 2;
+    grid-column: 1;
+}
+.main {
+    grid-row: 2;
+    grid-column: 2;
+}
+.aside {
+    grid-row: 2;
+    grid-column: 3;
+}
+</code></pre></div></article><article class="example example-grid-layout"><div class="page"><main class="main">Капитан схватил утконоса и радостноподбросил его в небо. Зверек расправил крылья и взлетел</main><nav class="nav">Навигация</nav><aside class="aside">Реклама</aside><header class="header">Шапка</header><footer class="footer">Подвал</footer></div></article><article class="center code-2"><div class="wrapper"><pre><code class="css">.page {
+    display: grid;
+    grid-gap: 0 20px;
+    grid-template-columns: 250px auto 350px;
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas:
+        "header header header"
+        "nav    main   aside"
+        "footer footer footer";
+}
+</code></pre></div></article><article class="center code-1"><div class="wrapper"><pre><code class="css">.header { grid-area: header; }
+.aside { grid-area: aside; }
+.nav { grid-area: nav; }
+.main { grid-area: main; }
+.footer { grid-area: footer; }
+
+</code></pre></div></article><article class="example example-grid-layout-area"><div class="page"><main class="main">Капитан схватил утконоса и радостноподбросил его в небо. Зверек расправил крылья и взлетел</main><nav class="nav">Навигация</nav><aside class="aside">Реклама</aside><header class="header">Шапка</header><footer class="footer">Подвал</footer></div></article><article class="center code-2"><div class="wrapper"><pre><code class="css">@media (max-width: 900px) {
+    .page {
+        grid-template-areas:
+            "header header header"
+            "nav    main   main"
+            "footer footer footer";
+    }
+}
+</code></pre></div></article><article class="example example-grid-layout-area"><div class="page wide-x"><main class="main">Капитан схватил утконоса и радостноподбросил его в небо. Зверек расправил крылья и взлетел</main><nav class="nav">Навигация</nav><aside class="aside">Реклама</aside><header class="header">Шапка</header><footer class="footer">Подвал</footer></div></article><article class="center code-2"><div class="wrapper"><pre><code class="css">@media (max-width: 900px) {
+    .page {
+        grid-template-areas:
+            "header header header"
+            "nav    main   main"
+            "footer footer footer";
+    }
+    .aside {
+        display: none;
+    }
+}
+</code></pre></div></article><article class="example example-grid-layout-area"><div class="page wide"><main class="main">Капитан схватил утконоса и радостноподбросил его в небо. Зверек расправил крылья и взлетел</main><nav class="nav">Навигация</nav><aside class="aside">Реклама</aside><header class="header">Шапка</header><footer class="footer">Подвал</footer></div></article><article class="screen screen--pinterest"></article><article class="center code-1"><div class="wrapper"><pre><code class="html">&lt;main class="products">
+    &lt;article class="product">…&lt;/article>
+    &lt;article class="product">…&lt;/article>
+    &lt;article class="product">…&lt;/article>
+    &lt;article class="product">…&lt;/article>
+    &lt;article class="product">…&lt;/article>
+    …
+&lt;/main>
+</code></pre></div></article><article class="center code-0"><div class="wrapper"><pre><code class="css">.products {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:
+        repeat(6, 150px);
+}
+</code></pre></div></article><article class="center code-0"><div class="wrapper"><pre><code class="css">.product--big {
+      …
+      grid-row: span 2;
+      grid-column: span 2;
+      …
+  }
+</code></pre></div></article><article class="center code-0"><div class="wrapper"><pre><code class="css">.product--tall {
+      …
+      grid-row: span 2;
+      …
+  }
+</code></pre></div></article><article class="screen screen--grid-1"></article><article class="center code-0"><div class="wrapper"><pre><code class="css">.product {
+    …
+    grid-column: span 6;
+    …
+}
+</code></pre></div></article><article class="screen screen--grid-2"></article><article class="center code-0"><div class="wrapper"><pre><code class="css">.product {
+    …
+    grid-auto-flow: dense;
+    …
+}
+</code></pre></div></article><article class="screen screen--grid-3"></article><article class="center code-0"><div class="wrapper"><pre><code class="css">.banner {
+    …
+    grid-row-start: 2;
+    …
+}
+</code></pre></div></article><article class="screen screen--grid-4"></article><article class="center code-0"><div class="wrapper"><pre><code class="css">.banner {
+    …
+    grid-row-start: 2;
+    grid-column-start: 2;
+    …
+}
+</code></pre></div></article><article class="screen screen--grid-5"></article><article class="screen screen--support-future"></article><article class="contacts center qrcode"><div class="wrapper"><div class="about-speaker half"><p class="name">Антон Немцев</p><p class="link">http://silentimp.info/</p><p class="twitter">@silentimp</p><p class="email">thesilentimp@gmail.com</p><p class="skype">skype: ravencry</p></div><div class="half"><img src="images/git.svg" alt="QRCODE cо ссылкой на доклад"></div><p><a href="https://github.com/SilentImp/LayoutTalk" data-click>https://goo.gl/y3lvfc</a></p></div></article></section></body></html>
