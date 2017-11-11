@@ -23,9 +23,6 @@ block slides
             p
                 a.overlay__link(href="https://drafts.csswg.org/css-grid-2/", data-click=true) https://drafts.csswg.org/css-grid-2/
 
-    //- article
-    //-     p материалы для изучения
-
     article.book.book--full.illustration.illustration--garden.overlay
         .overlay__abstract.overlay__abstract--right
             h1.overlay__title Grid Garden
@@ -711,6 +708,14 @@ block slides
     article.screen.screen--grid-5
 
     article.screen.screen--support-future
+      
+    article.center.code-0
+      .wrapper
+          pre
+              code.css.
+                  @supports ( grid-auto-flow: dense ) {
+                      /* Магия */
+                  }
 
     article.contacts.center.qrcode
         .wrapper
