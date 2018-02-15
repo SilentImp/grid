@@ -1,13 +1,13 @@
 extends ./partials/layout.jade
 
 block title
-    title CSS Grid Layout 
+    title CSS Grid Layout
 
 block slides
 
     article.illustration.illustration--title.cloud.cloud--title
         h1
-            p.wrapper CSS Grid Layout 
+            p.wrapper CSS Grid Layout
 
     article.screen.screen--grid.overlay
         .overlay__abstract.overlay__abstract--right
@@ -16,7 +16,7 @@ block slides
             p
                 a.overlay__link(href="https://drafts.csswg.org/css-grid/", data-click=true) https://drafts.csswg.org/css-grid/
 
-    article.screen.screen--draft.overlay
+    article.screen.screen--draft-2.overlay
         .overlay__abstract.overlay__abstract--right
             h3.overlay__title CSS Grid Layout Module Level 2
             img.overlay__qr(src="images/draft.svg", alt="QRCODE cо ссылкой")
@@ -30,12 +30,12 @@ block slides
             p
                 a.overlay__link(href="http://cssgridgarden.com/", data-click=true) http://cssgridgarden.com/
 
-    article.screen.screen--cguide.overlay
+    article.book.book--full.screen.screen--cssgridio.overlay
         .overlay__abstract.overlay__abstract--right
-            h3.overlay__title A Complete Guide to Grid
-            img.overlay__qr(src="images/cguide.svg", alt="QRCODE cо ссылкой")
+            h3.overlay__title CSS Grid with Wes Bos
+            img.overlay__qr(src="images/cssgridio.svg", alt="QRCODE cо ссылкой")
             p
-                a.overlay__link(href="https://css-tricks.com/snippets/css/complete-guide-grid/", data-click=true) https://css-tricks.com/snippets/css/complete-guide-grid/
+                a.overlay__link(href="https://cssgrid.io/", data-click=true) https://cssgrid.io/
 
     article.screen.screen--quick.overlay
         .overlay__abstract.overlay__abstract--right
@@ -43,6 +43,31 @@ block slides
             img.overlay__qr(src="images/quick.svg", alt="QRCODE cо ссылкой")
             p
                 a.overlay__link(href="http://jensimmons.com/post/aug-15-2017/heres-super-quick-way-try-out-css-grid", data-click=true) http://jensimmons.com/post/aug-15-2017/heres-super-quick-way-try-out-css-grid
+
+    article.screen.screen--layoutLandYouTube.overlay
+        .overlay__abstract.overlay__abstract--right
+            h3.overlay__title Layout Land YouTube
+            img.overlay__qr(src="images/layoutLandYouTube.svg", alt="QRCODE cо ссылкой")
+            p
+                a.overlay__link(href="https://www.youtube.com/channel/UC7TizprGknbDalbHplROtag", data-click=true) https://www.youtube.com/
+                    br
+                    | channel/UC7TizprGknbDalbHplROtag
+
+
+    article.screen.screen--layoutLand.overlay
+        .overlay__abstract.overlay__abstract--right
+            h1.overlay__title Layout Land
+            img.overlay__qr(src="images/layoutLand.svg", alt="QRCODE cо ссылкой")
+            p
+                a.overlay__link(href="http://www.layout.land/", data-click=true) http://www.layout.land/
+
+    article.book.book--full.illustration.illustration--simmons.overlay
+        img.simmons--tweet(src="images/tweet.png", alt="Tweet")
+        .overlay__abstract
+            h1.overlay__title Jen Simmons
+            img.overlay__qr(src="images/simmons.svg", alt="QRCODE cо ссылкой")
+            p
+                a.overlay__link(href="http://jensimmons.com/", data-click=true) http://jensimmons.com/
 
 
     article.book.book--full.illustration.illustration--yt.overlay
@@ -66,7 +91,7 @@ block slides
             p
                 a.overlay__link(href="https://abookapart.com/products/get-ready-for-css-grid-layout", data-click=true) https://abookapart.com/products/get-ready-for-css-grid-layout
 
-        
+
     article.book.book--full.illustration.illustration--full.overlay
         .overlay__abstract.overlay__abstract--right
             h2.overlay__title THE NEW CSS LAYOUT
@@ -74,13 +99,27 @@ block slides
             p
                 a.overlay__link(href="https://abookapart.com/products/the-new-css-layout", data-click=true) https://abookapart.com/products/the-new-css-layout
 
-        
+    article.book.book--full.illustration.illustration--bugs.overlay
+        .overlay__abstract
+            h1.overlay__title Grid Bugs
+            img.overlay__qr(src="images/bugs.svg", alt="QRCODE cо ссылкой")
+            p
+                a.overlay__link(href="https://github.com/rachelandrew/gridbugs", data-click=true) https://github.com/rachelandrew/gridbugs
+
     article.book.book--full.illustration.illustration--rachelandrew.overlay
         .overlay__abstract
             h1.overlay__title Rachel Andrew
             img.overlay__qr(src="images/rachelandrew.svg", alt="QRCODE cо ссылкой")
             p
                 a.overlay__link(href="https://rachelandrew.co.uk/", data-click=true) https://rachelandrew.co.uk/
+
+    article.screen.screen--cguide.overlay
+        .overlay__abstract.overlay__abstract--right
+            h3.overlay__title A Complete Guide to Grid
+            img.overlay__qr(src="images/cguide.svg", alt="QRCODE cо ссылкой")
+            p
+                a.overlay__link(href="https://css-tricks.com/snippets/css/complete-guide-grid/", data-click=true) https://css-tricks.com/snippets/css/complete-guide-grid/
+
 
     article.screen.screen--live.overlay
         .overlay__abstract.overlay__abstract--right
@@ -93,18 +132,18 @@ block slides
     //-     p поддержка
 
     article.screen.screen--support
-        
+
     article.screen.screen--support-ie
-        
+
     article.screen.screen--support-next.center.cloud.cloud--ie-next
-        h1 
+        h1
             p.wrapper 17 октября
 
     //- article
     //-     p свойства
 
     article.illustration.illustration--grid-scheme
-        
+
     article.center.code-10
         .wrapper
             pre
@@ -112,7 +151,7 @@ block slides
                     .container {
                         display: grid;
                     }
-                    
+
     article.center.code-1
         .wrapper
             pre
@@ -128,22 +167,22 @@ block slides
 
     article.example.example--base-1
         .container
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
+            .item 1
+            .item 2
+            .item 3
+            .item 4
+            .item 5
+            .item 6
+            .item 7
+            .item 8
+            .item 9
+            .item 10
+            .item 11
+            .item 12
+            .item 13
+            .item 14
+            .item 15
+            .item 16
 
     article.center.code-6
         .wrapper
@@ -151,30 +190,30 @@ block slides
                 code.css.
                     .container {
                         display: grid;
-                        grid-template-columns: 
+                        grid-template-columns:
                             1fr 2fr 1fr 1fr;
-                        grid-template-rows: 
+                        grid-template-rows:
                             100px 1fr 1fr 100px;
                     }
 
     article.example.example--base-2
         .container
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
+            .item 1
+            .item 2
+            .item 3
+            .item 4
+            .item 5
+            .item 6
+            .item 7
+            .item 8
+            .item 9
+            .item 10
+            .item 11
+            .item 12
+            .item 13
+            .item 14
+            .item 15
+            .item 16
 
     article.center.code-6
         .wrapper
@@ -182,31 +221,31 @@ block slides
                 code.css.
                     .container {
                         display: grid;
-                        grid-template-columns: 
+                        grid-template-columns:
                             repeat(4, 1fr);
-                        grid-template-rows: 
+                        grid-template-rows:
                             100px auto 100px 100px;
                     }
 
     article.example.example--base-3
         .container
-            .item
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-    //-         
+            .item 1
+            .item 2
+            .item 3
+            .item 4
+            .item 5
+            .item 6
+            .item 7
+            .item 8
+            .item 9
+            .item 10
+            .item 11
+            .item 12
+            .item 13
+            .item 14
+            .item 15
+            .item 16
+    //-
     //- article.center.code-6
     //-     .wrapper
     //-         pre
@@ -214,7 +253,7 @@ block slides
     //-                 .container {
     //-                     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     //-                 }
-    //- 
+    //-
     //- article.example.example--base-15
     //-     .container
     //-         .item.item--x
@@ -227,29 +266,29 @@ block slides
             pre
                 code.css.
                     .container {
-                        grid-template: 
-                            1fr 50px 1fr 1fr / 
+                        grid-template:
+                            1fr 50px 1fr 1fr /
                             100px 3fr 1fr 100px;
                     }
 
     article.example.example--base-14
         .container
-            .item
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
+            .item 1
+            .item 2
+            .item 3
+            .item 4
+            .item 5
+            .item 6
+            .item 7
+            .item 8
+            .item 9
+            .item 10
+            .item 11
+            .item 12
+            .item 13
+            .item 14
+            .item 15
+            .item 16
 
     article.center.code-10
         .wrapper
@@ -261,22 +300,22 @@ block slides
 
     article.example.example--base-13
         .container
-            .item
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
+            .item 1
+            .item 2
+            .item 3
+            .item 4
+            .item 5
+            .item 6
+            .item 7
+            .item 8
+            .item 9
+            .item 10
+            .item 11
+            .item 12
+            .item 13
+            .item 14
+            .item 15
+            .item 16
 
     article.center.code-1
         .wrapper
@@ -293,22 +332,22 @@ block slides
 
     article.example.example--base-4
         .container
-            .item.item--second Второй
-            .item.item--first Первый
-            .item
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
+            .item 1
+            .item.item--second 3
+            .item.item--first 2
+            .item 4
+            .item 5
+            .item 6
+            .item 7
+            .item 8
+            .item 9
+            .item 10
+            .item 11
+            .item 12
+            .item 13
+            .item 14
+            .item 15
+            .item 16
 
     article.center.code-10
         .wrapper
@@ -320,22 +359,55 @@ block slides
 
     article.example.example--base-5
         .container
-            .item.item--second Второй
-            .item.item--first Первый
-            .item
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
-            .item 
+            .item 1
+            .item.item--second 3
+            .item.item--first 2
+            .item 4
+            .item 5
+            .item 6
+            .item 7
+            .item 8
+            .item 9
+            .item 10
+            .item 11
+            .item 12
+            .item 13
+            .item 14
+            .item 15
+            .item 16
+
+    article.center.code-1
+        .wrapper
+            pre
+                code.css.
+                    .item--first {
+                        order: 1;
+                    }
+                    .item--second {
+                        order: 2;
+                    }
+                    .item--first ~ .item {
+                        order: 3;
+                    }
+
+    article.example.example--base-55
+        .container
+            .item 1
+            .item.item--second 3
+            .item.item--first 2
+            .item 4
+            .item 5
+            .item 6
+            .item 7
+            .item 8
+            .item 9
+            .item 10
+            .item 11
+            .item 12
+            .item 13
+            .item 14
+            .item 15
+            .item 16
 
     article.center.code-1
         .wrapper
@@ -418,7 +490,7 @@ block slides
         .container
             .item.item--alpha &alpha;
             .item.item--omega &omega;
-            
+
     article.center.code-0
         .wrapper
             pre
@@ -426,7 +498,7 @@ block slides
                     .item--alpha {
                         grid-area: 2 / 2 / span 2 / span 3;
                     }
-    
+
     article.example.example--base-11
         .container
             .item.item--alpha &alpha;
@@ -441,13 +513,13 @@ block slides
                     .item--omega {
                         grid-area: omega;
                     }
-        
+
     article.center.code-0
         .wrapper
             pre
                 code.css.
                     .container {
-                        grid-template-areas: 
+                        grid-template-areas:
                             "omega omega alpha ."
                             "omega omega alpha ."
                             ". . alpha ."
@@ -609,6 +681,22 @@ block slides
             header.header Шапка
             footer.footer Подвал
 
+    article.illustration.illustration--debug.overlay
+        .overlay__abstract.overlay__abstract--left
+            h1.overlay__title Как это отладить?
+
+    article.screen.screen--ffdebug
+
+    article.screen.screen--secret-flags
+
+    article.screen.screen--chromedebug
+
+    article.screen.screen--plugin-1
+
+    article.screen.screen--plugin-2
+
+    article.illustration.illustration--pinterest
+
     article.screen.screen--pinterest
 
     article.center.code-1
@@ -624,75 +712,64 @@ block slides
                         …
                     &lt;/main>
 
+    article.screen.screen--p1
+
+    article.center.code-0
+        .wrapper
+            pre
+                code.css.
+                  $height: 240px;
+                  $width: 150px;
+                  $gap: 20px;
+
     article.center.code-0
         .wrapper
             pre
                 code.css.
                     .products {
                         display: grid;
-                        grid-gap: 20px;
+                        grid-gap: $gap;
                         grid-template-columns:
                             repeat(6, 150px);
                     }
 
+    article.screen.screen--p2
+
     article.center.code-0
         .wrapper
             pre
                 code.css.
-                  .product--big {
+                    &--tall {
+                        …
+                        grid-row: span 2;
+                        height: calc($height*2 + $gap);
+                    }
+
+    article.center.code-0
+        .wrapper
+            pre
+                code.css.
+                    &--big {
                         …
                         grid-row: span 2;
                         grid-column: span 2;
-                        …
+                        height: calc($height*2 + $gap);
+                        width: calc($width*2 + $gap);
                     }
+
+    article.screen.screen--p3
+
+    article.screen.screen--banner
 
     article.center.code-0
         .wrapper
             pre
-                code.css.
-                  .product--tall {
-                        …
-                        grid-row: span 2;
-                        …
-                    }
-
-    article.screen.screen--grid-1
-
-    article.center.code-0
-        .wrapper
-            pre
-                code.css.
-                    .product {
-                        …
-                        grid-column: span 6;
-                        …
-                    }
-
-    article.screen.screen--grid-2
-
-    article.center.code-0
-        .wrapper
-            pre
-                code.css.
-                    .product {
-                        …
-                        grid-auto-flow: dense;
-                        …
-                    }
-
-    article.screen.screen--grid-3
-
-    article.center.code-0
-        .wrapper
-            pre
-                code.css.
-                    .banner {
-                        …
-                        grid-row-start: 2;
-                        …
-                    }
-
-    article.screen.screen--grid-4
+                code.html.
+                    &lt;main class="products">
+                      &lt;aside class="banner">&lt;/aside>
+                      &lt;article class="product product--tall">&lt;/article>
+                      &lt;article class="product">&lt;/article>
+                      &lt;article class="product product--tall">&lt;/article>
 
     article.center.code-0
         .wrapper
@@ -702,13 +779,79 @@ block slides
                         …
                         grid-row-start: 2;
                         grid-column-start: 2;
-                        …
                     }
 
-    article.screen.screen--grid-5
+    article.screen.screen--p4
+
+    article.screen.screen--banner-wide
+
+    article.center.code-2
+        .wrapper
+            pre
+                code.html.
+                    &lt;main class="products">
+                      &lt;aside class="banner-wide">&lt;/aside>
+                      &lt;article class="product product--tall">&lt;/article>
+                      &lt;article class="product">&lt;/article>
+                      &lt;article class="product product--tall">&lt;/article>
+
+
+    article.center.code-0
+        .wrapper
+            pre
+                code.css.
+                    .banner--wide {
+                        …
+                        grid-row-start: 4;
+                        grid-column: span 6;
+                    }
+
+    article.screen.screen--p5
+
+    article.center.code-0
+        .wrapper
+            pre
+                code.css.
+                    .products {
+                        …
+                        grid-auto-flow: dense;
+                    }
+
+    article.screen.screen--p6
+
+    article.center.code-2
+        .wrapper
+            pre
+                code.html.
+                    &lt;article class="content">
+                        &lt;aside class="banners">
+                            &lt;aside class="banner">&lt;/aside>
+                            &lt;!--…-->
+                        &lt;/aside>
+                        &lt;main class="products">
+                            &lt;article class="product">&lt;/article>
+                            &lt;!--…-->
+                        &lt;/main>
+                    &lt;/article>
+
+    article.screen.screen--p7
+
+    article.center.code-0
+        .wrapper
+            pre
+                code.css.
+                    .banners,
+                    .products {
+                      display: contents;
+                      margin: auto;
+                    }
+
+    article.screen.screen--p8
+
+    article.screen.screen--contents
 
     article.screen.screen--support-future
-      
+
     article.center.code-0
       .wrapper
           pre
@@ -716,6 +859,55 @@ block slides
                   @supports ( grid-auto-flow: dense ) {
                       /* Магия */
                   }
+
+    article.center.code-0
+        .wrapper
+            pre
+                code.css.
+                    /* Флекс */
+                    .products {…}
+                    .product {…}
+                    @supports ( grid-auto-flow: dense ) {
+                        /* Гриды */
+                        .products {…}
+                        .product {…}
+                    }
+
+    article.center.code-0
+        .wrapper
+            pre
+                code.css.
+                    /* Флекс */
+                    .products {
+                        max-width: 1020px;
+                        margin: 10px auto;
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+
+    article.center.code-0
+        .wrapper
+            pre
+                code.css.
+                    /* Флекс */
+                    .product {
+                        …
+                        margin: 0 10px 20px;
+                    }
+
+    article.center.code-0
+        .wrapper
+            pre
+                code.css.
+                    /* Гриды */
+                    .product {
+                        …
+                        margin: auto;
+                    }
+
+    article.screen.screen--p9
+
+    article.screen.screen--p10
 
     article.contacts.center.qrcode
         .wrapper

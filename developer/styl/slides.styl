@@ -3,12 +3,26 @@
         background-image url(../images/grid-scheme.png)
     &--title
         background-image url(../images/title.jpg)
+    &--debug
+        background-image url(../images/debug.jpg)
     &--brief
         background-image url(../images/book.jpg)
-    
+    &--pinterest
+        background-image url(../images/pinterest-logotype.png)
+        background-size 80% auto
+        background-color #fff
+
     &--full
         background-image url(../images/book-2.jpg)
-        
+
+    &--bugs
+        background-image url(../images/bug.jpg)
+
+    &--simmons
+        background-image url(../images/simmons.jpg)
+        background-position 0 0
+        background-color #000
+
     &--rachelandrew
         background-image url(../images/rachelandrew.jpg)
         background-position 160px 0
@@ -22,19 +36,72 @@
         background-image url(../images/garden.png)
         background-position 100% 0
 
+.simmons--tweet
+    position absolute
+    bottom 100px
+    right 200px
+
 .screen
+    &--p1
+        background-image url(../images/p1.png)
+    &--p2
+        background-image url(../images/p2.png)
+    &--p3
+        background-image url(../images/p3.png)
+    &--p4
+        background-image url(../images/p4.png)
+    &--banner
+        background-image url(../images/banner.png)
+        background-color #000
+        background-size auto
+    &--banner-wide
+        background-image url(../images/banner-wide.png)
+        background-color #000
+        background-size 75% auto
+    &--p5
+        background-image url(../images/p5.png)
+    &--p6
+        background-image url(../images/p6.png)
+    &--p7
+        background-image url(../images/p7.png)
+    &--p8
+        background-image url(../images/p8.png)
+    &--p9
+        background-image url(../images/p9.png)
+    &--contents
+        background-image url(../images/contents.png)
+    &--p10
+        background-image url(../images/p10.png)
+    &--ffdebug
+        background-image url(../images/ffdebug.png)
+    &--secret-flags
+        background-image url(../images/flags.png)
+    &--chromedebug
+        background-image url(../images/chromedebug.png)
+    &--plugin-1
+        background-image url(../images/cssgridplugin.png)
+    &--plugin-2
+        background-image url(../images/chromedebug-2.png)
     &--live
         background-image url(../images/live.png)
     &--draft
         background-image url(../images/draft.png)
+    &--draft-2
+        background-image url(../images/draft-2.png)
     &--ex
         background-image url(../images/ex.png)
     &--quick
         background-image url(../images/quick.png)
+    &--layoutLandYouTube
+        background-image url(../images/layoutLandYouTube.png)
+    &--layoutLand
+        background-image url(../images/layoutLand.png)
     &--cguide
         background-image url(../images/cguide.png)
     &--support
-        background-image url(../images/support.png)
+        background-image url(../images/support-2.png)
+    &--cssgridio
+        background-image url(../images/cssgridio.png)
     &--grid
         background-image url(../images/grid.png)
     &--support-next
@@ -81,7 +148,7 @@
         h4&
             font-size 36px
             line-height 42px
-            
+
     &__qr
         margin 20px 0
         width 100%
@@ -108,7 +175,7 @@ article.cloud.cloud--ie-next
         &:after
             transform rotate(65deg)
             transform-origin 10px -198px
-            
+
 article.cloud.cloud--title
     h1
         width 500px
@@ -156,9 +223,9 @@ article.center.qrcode.var-5
     font-size 60px
   a
     font-size 42px
-    
-    
-    
+
+
+
 article.example.example-grid-layout
     .page
         display: grid;
@@ -295,6 +362,10 @@ article.example
         height 100%
         background-color rgba(240, 240, 255, .75)
         border: 1px solid rgba(140, 140, 155, 1)
+        align-content: center;
+        display: grid;
+        text-align: center;
+        font-size 42px
     &--base-1
         .container
             display grid
@@ -305,6 +376,7 @@ article.example
             height 100%
             grid-template-columns: 1fr 2fr 1fr 1fr;
             grid-template-rows: 100px 1fr 1fr 100px;
+            align-items: center
     &--base-3
         .container
             display grid
@@ -358,6 +430,33 @@ article.example
                 color #fff
                 text-transform uppercase
                 border 0
+    &--base-55
+        .container
+            position relative
+            display grid
+            height 100%
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            .item--first
+                background-color #e50000
+                font-size 64px
+                line-height 25vh
+                text-align center
+                color #fff
+                text-transform uppercase
+                border 0
+                order 1
+            .item--second
+                background-color #00e500
+                font-size 64px
+                line-height 25vh
+                text-align center
+                color #fff
+                text-transform uppercase
+                border 0
+                order 2
+            .item--first ~ .item
+                order 3
     &--base-6
         .container
             position relative
@@ -368,9 +467,9 @@ article.example
             background:
                 linear-gradient(0deg, rgba(255, 240, 240, .75) 50%, transparent 50%),
                 linear-gradient(90deg, rgba(255, 240, 255, .75) 50%, transparent 50%);
-            background-size 50% 50%, 50% 50% 
+            background-size 50% 50%, 50% 50%
             background-repeat repeat, repeat
-            .item 
+            .item
                 &--alpha
                     background-color #f0fff0
                     font-size 120px
@@ -393,9 +492,9 @@ article.example
             background:
                 linear-gradient(0deg, rgba(255, 240, 240, .75) 50%, transparent 50%),
                 linear-gradient(90deg, rgba(255, 240, 255, .75) 50%, transparent 50%);
-            background-size 50% 50%, 50% 50% 
+            background-size 50% 50%, 50% 50%
             background-repeat repeat, repeat
-            .item 
+            .item
                 border 0
                 &--alpha
                     background-color #f0fff0
@@ -419,9 +518,9 @@ article.example
             background:
                 linear-gradient(0deg, rgba(255, 240, 240, .75) 50%, transparent 50%),
                 linear-gradient(90deg, rgba(255, 240, 255, .75) 50%, transparent 50%);
-            background-size 50% 50%, 50% 50% 
+            background-size 50% 50%, 50% 50%
             background-repeat repeat, repeat
-            .item 
+            .item
                 border 0
                 &--alpha
                     background-color #f0fff0
@@ -448,9 +547,9 @@ article.example
             background:
                 linear-gradient(0deg, rgba(255, 240, 240, .75) 50%, transparent 50%),
                 linear-gradient(90deg, rgba(255, 240, 255, .75) 50%, transparent 50%);
-            background-size 50% 50%, 50% 50% 
+            background-size 50% 50%, 50% 50%
             background-repeat repeat, repeat
-            .item 
+            .item
                 border 0
                 &--alpha
                     background-color #f0fff0
@@ -475,9 +574,9 @@ article.example
             background:
                 linear-gradient(0deg, rgba(255, 240, 240, .75) 50%, transparent 50%),
                 linear-gradient(90deg, rgba(255, 240, 255, .75) 50%, transparent 50%);
-            background-size 50% 50%, 50% 50% 
+            background-size 50% 50%, 50% 50%
             background-repeat repeat, repeat
-            .item 
+            .item
                 border 0
                 &--alpha
                     background-color #f0fff0
@@ -505,9 +604,9 @@ article.example
             background:
                 linear-gradient(0deg, rgba(255, 240, 240, .75) 50%, transparent 50%),
                 linear-gradient(90deg, rgba(255, 240, 255, .75) 50%, transparent 50%);
-            background-size 50% 50%, 50% 50% 
+            background-size 50% 50%, 50% 50%
             background-repeat repeat, repeat
-            .item 
+            .item
                 border 0
                 &--alpha
                     background-color #f0fff0
@@ -527,9 +626,9 @@ article.example
             background:
                 linear-gradient(0deg, rgba(255, 240, 240, .75) 50%, transparent 50%),
                 linear-gradient(90deg, rgba(255, 240, 255, .75) 50%, transparent 50%);
-            background-size 50% 50%, 50% 50% 
+            background-size 50% 50%, 50% 50%
             background-repeat repeat, repeat
-            .item 
+            .item
                 border 0
                 &--alpha
                     background-color #f0fff0
@@ -560,7 +659,7 @@ article.example
             display grid
             height 100%
             grid-template: 1fr 50px 1fr 1fr / 100px 3fr 1fr 100px;
-    
+
     &--base-15
         .container
             grid-template-columns: repeat(auto-fill, minmax(25ch, 1fr));
