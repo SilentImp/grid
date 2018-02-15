@@ -1,0 +1,46 @@
+.product {
+    margin: 0;
+}
+
+.product {
+    height: 240px;
+    margin: 20px;
+    position: relative;
+    background: url(product-1.png) 50% 0 no-repeat;
+    background-size: 150px auto;
+}
+
+.product--type-2.product {
+    background-image: url(product-2.png);
+    background-size: 150px auto;
+}
+
+.product--type-3.product {
+    background-image: url(product-3.png);
+    grid-row: span 2;
+    background-size: 150px auto;
+    height: 500px;
+}
+
+.product--type-4.product {
+    background-image: url(product-4.png);
+    grid-row: span 2;
+    grid-column: span 2;
+    height: 500px;
+    background-size: 320px auto;
+}
+
+.product--banner-1.product {
+    background-image: url(banner-1.png);
+    background-size: cover;
+    grid-column: span 6;
+    grid-row-start: 2;
+}
+
+.product--banner-2.product {
+    background-image: url(banner-2.png);
+    grid-row-start: 2;
+    grid-column-start: 2;
+    background-size: contain;
+    background-position: 50% 50%;
+}
