@@ -215,6 +215,25 @@ block slides
             .item 15
             .item 16
 
+    article.example.example--base-1-flex
+        .container
+            .item 1
+            .item 2
+            .item 3
+            .item 4
+            .item 5
+            .item 6
+            .item 7
+            .item 8
+            .item 9
+            .item 10
+            .item 11
+            .item 12
+            .item 13
+            .item 14
+            .item 15
+            .item 16
+
     article.center.code-6
         .wrapper
             pre
@@ -245,21 +264,42 @@ block slides
             .item 14
             .item 15
             .item 16
-    //-
-    //- article.center.code-6
-    //-     .wrapper
-    //-         pre
-    //-             code.css.
-    //-                 .container {
-    //-                     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    //-                 }
-    //-
-    //- article.example.example--base-15
-    //-     .container
-    //-         .item.item--x
-    //-         .item.item--x
-    //-         .item.item--x
-    //-         .item.item--x
+
+    article.center.code-6
+        .wrapper
+            pre
+                code.css.
+                    .container {
+                        grid-template-columns:
+                            repeat(
+                                auto-fill,
+                                minmax(200px, 1fr)
+                            );
+                    }
+
+    article.example.example--base-15
+        .viewport
+            .container
+                .item 1
+                .item 2
+                .item 3
+                .item 4
+
+    article.example.example--base-16
+        .viewport
+            .container
+                .item 1
+                .item 2
+                .item 3
+                .item 4
+
+    article.example.example--base-17
+        .viewport
+            .container
+                .item 1
+                .item 2
+                .item 3
+                .item 4
 
     article.center.code-6
         .wrapper
@@ -681,9 +721,11 @@ block slides
             header.header Шапка
             footer.footer Подвал
 
-    article.illustration.illustration--debug.overlay
-        .overlay__abstract.overlay__abstract--left
-            h1.overlay__title Как это отладить?
+    article.illustration.illustration--debug.cloud.cloud--debug
+        h1
+            p.wrapper Как это
+                br
+                | отладить?
 
     article.screen.screen--ffdebug
 
@@ -698,6 +740,14 @@ block slides
     article.illustration.illustration--pinterest
 
     article.screen.screen--pinterest
+
+    article.screen.screen--code.overlay
+        .overlay__abstract.overlay__abstract--right
+            h3.overlay__title Репозиторий с кодом
+            img.overlay__qr(src="images/code.svg", alt="QRCODE cо ссылкой")
+            p
+                a.overlay__link(href="https://github.com/SilentImp/grid-task", data-click=true) https://github.com/SilentImp/grid-task
+
 
     article.center.code-1
         .wrapper
@@ -714,13 +764,13 @@ block slides
 
     article.screen.screen--p1
 
-    article.center.code-0
+    article.center.code-10
         .wrapper
             pre
                 code.css.
-                  $height: 240px;
-                  $width: 150px;
-                  $gap: 20px;
+                    $height: 240px;
+                    $width: 150px;
+                    $gap: 20px;
 
     article.center.code-0
         .wrapper
@@ -761,17 +811,17 @@ block slides
 
     article.screen.screen--banner
 
-    article.center.code-0
+    article.center.code-2
         .wrapper
             pre
                 code.html.
                     &lt;main class="products">
-                      &lt;aside class="banner">&lt;/aside>
-                      &lt;article class="product product--tall">&lt;/article>
-                      &lt;article class="product">&lt;/article>
-                      &lt;article class="product product--tall">&lt;/article>
+                        &lt;aside class="banner">&lt;/aside>
+                        &lt;article class="product product--tall">&lt;/article>
+                        &lt;article class="product">&lt;/article>
+                        &lt;article class="product product--tall">&lt;/article>
 
-    article.center.code-0
+    article.center.code-8
         .wrapper
             pre
                 code.css.
@@ -790,13 +840,13 @@ block slides
             pre
                 code.html.
                     &lt;main class="products">
-                      &lt;aside class="banner-wide">&lt;/aside>
-                      &lt;article class="product product--tall">&lt;/article>
-                      &lt;article class="product">&lt;/article>
-                      &lt;article class="product product--tall">&lt;/article>
+                        &lt;aside class="banner-wide">&lt;/aside>
+                        &lt;article class="product product--tall">&lt;/article>
+                        &lt;article class="product">&lt;/article>
+                        &lt;article class="product product--tall">&lt;/article>
 
 
-    article.center.code-0
+    article.center.code-8
         .wrapper
             pre
                 code.css.
@@ -808,7 +858,7 @@ block slides
 
     article.screen.screen--p5
 
-    article.center.code-0
+    article.center.code-8
         .wrapper
             pre
                 code.css.
@@ -836,14 +886,14 @@ block slides
 
     article.screen.screen--p7
 
-    article.center.code-0
+    article.center.code-8
         .wrapper
             pre
                 code.css.
                     .banners,
                     .products {
-                      display: contents;
-                      margin: auto;
+                        display: contents;
+                        margin: auto;
                     }
 
     article.screen.screen--p8
@@ -853,12 +903,12 @@ block slides
     article.screen.screen--support-future
 
     article.center.code-0
-      .wrapper
-          pre
-              code.css.
-                  @supports ( grid-auto-flow: dense ) {
-                      /* Магия */
-                  }
+        .wrapper
+            pre
+                code.css.
+                    @supports ( grid-auto-flow: dense ) {
+                        /* Магия */
+                    }
 
     article.center.code-0
         .wrapper

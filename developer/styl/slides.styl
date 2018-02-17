@@ -5,6 +5,7 @@
         background-image url(../images/title.jpg)
     &--debug
         background-image url(../images/debug.jpg)
+        background-size 105% 105%
     &--brief
         background-image url(../images/book.jpg)
     &--pinterest
@@ -42,6 +43,8 @@
     right 200px
 
 .screen
+    &--code
+        background-image url(../images/code.png)
     &--p1
         background-image url(../images/p1.png)
     &--p2
@@ -196,6 +199,24 @@ article.cloud.cloud--title
             display none
             transform rotate(65deg)
             transform-origin 10px -198px
+
+article.cloud.cloud--debug
+    h1
+        width 350px
+        height 350px
+        right 20px
+        top 20px
+        line-height 350px
+        text-align center
+        box-sizing border-box
+        background-color rgba(255,255,255,.95)
+        .wrapper
+            font-size 48px
+            line-height 56px
+            white-space nowrap
+        &:after
+            transform rotate(40deg)
+            transform-origin 10px -173px
 
 
 article.center.qrcode.var
@@ -370,6 +391,24 @@ article.example
         .container
             display grid
             height 100%
+
+    &--base-1-flex
+        .container
+            display flex
+            height 100%
+            width: 100%;
+            flex-wrap wrap
+            align-items stretch
+            align-content flex-start
+            justify-content space-around
+            .item
+                margin 0 0 20px
+                flex 200px 1 1
+                height 100px
+                max-width 400px
+                &:nth-child(3n)
+                    flex 300px 1 1
+
     &--base-2
         .container
             display grid
@@ -661,9 +700,49 @@ article.example
             grid-template: 1fr 50px 1fr 1fr / 100px 3fr 1fr 100px;
 
     &--base-15
+        .viewport
+            margin auto
+            background-color #ddd
+            height 100vh
+            width 960px
         .container
-            grid-template-columns: repeat(auto-fill, minmax(25ch, 1fr));
-            grid-gap 20px
+            display grid
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         .item
-            width: 300px;
-            height: 320px;
+            height: 340px;
+            border-style: none;
+            background-color #888;
+            &:nth-child(2n)
+                background-color #666;
+
+    &--base-16
+        .viewport
+            margin auto
+            background-color #ddd
+            height 100vh
+            width 800px
+        .container
+            display grid
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        .item
+            height: 340px;
+            border-style: none;
+            background-color #888;
+            &:nth-child(2n)
+                background-color #666;
+
+    &--base-17
+        .viewport
+            margin auto
+            background-color #ddd
+            height 100vh
+            width 700px
+        .container
+            display grid
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        .item
+            height: 340px;
+            border-style: none;
+            background-color #888;
+            &:nth-child(2n)
+                background-color #666;
