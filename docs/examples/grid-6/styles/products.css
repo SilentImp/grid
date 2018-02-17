@@ -1,0 +1,20 @@
+.products {
+    margin: 10px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(6,150px);
+    grid-auto-flow: dense;
+}
+
+.products {
+    max-width: 1000px;
+    margin: 0 auto 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
